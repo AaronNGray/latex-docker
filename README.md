@@ -15,9 +15,9 @@ Versions
 --------
 All versions are based on Ubuntu: ([See all tags](https://hub.docker.com/r/blang/latex/))
 
-- [blang/latex:ubuntu (:latest) - Dockerfile.ubuntu](Dockerfile.ubuntu) Ubuntu TexLive distribution: Old but stable, most needed package: texlive-full (3.9GB)
-- [blang/latex:ctanbasic - Dockerfile.basic](Dockerfile.basic) CTAN TexLive Scheme-basic: Up-to-date, only basic packages, base for custom builds (500MB)
-- [blang/latex:ctanfull - Dockerfile.full](Dockerfile.full) CTAN TexLive Scheme-full: Up-to-date, all packages (5.6GB)
+- [aaronngray/latex:ubuntu (:latest) - Dockerfile.ubuntu](Dockerfile.ubuntu) Ubuntu TexLive distribution: Old but stable, most needed package: texlive-full (3.9GB)
+- [aaronngray/latex:ctanbasic - Dockerfile.basic](Dockerfile.basic) CTAN TexLive Scheme-basic: Up-to-date, only basic packages, base for custom builds (500MB)
+- [aaronngray/latex:ctanfull - Dockerfile.full](Dockerfile.full) CTAN TexLive Scheme-full: Up-to-date, all packages (5.6GB)
 
 If you need...
 - ...the most-stuff-works-out-of-the-box package, try `blang/latex:ubuntu`.
@@ -88,7 +88,7 @@ If software is missing, extend this base image with your own software:
 
 Create a Dockerfile or download [Dockerfile.blueprint](Dockerfile.blueprint) for examples:
 ```
-FROM blang/latex:ubuntu
+FROM aaronngray/latex:ubuntu
 
 # Minted + Pygments
 RUN tlmgr install minted
